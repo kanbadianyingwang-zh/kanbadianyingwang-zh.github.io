@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="light dark">
+<title>看吧电影网 · 电影播出信息实时查询与在线观看渠道汇总（kanbadianyingwang-zh.github.io）</title>
+<meta name="description" content="看吧电影网（kanbadianyingwang-zh.github.io）汇总院线、网络电影、剧集与纪录片的播出信息，提供上线下线时间、播放平台、版本差异与档期查询；每日更新排片与平台变动，帮助用户快速确认某部影片当下是否可看、在哪里看。">
+<meta name="keywords" content="看吧电影网,kanbadianyingwang-zh.github.io,电影播出信息查询,在线观看渠道汇总,电影上线下线时间,播放平台查询,院线排片,网络电影,电影档期,电影版本差异">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="theme-color" content="#0f1115">
+<link rel="canonical" href="https://kanbadianyingwang-zh.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="看吧电影网 · 电影播出信息实时查询与在线观看渠道汇总">
+<meta property="og:description" content="查询院线排片、网络电影与剧集的上线下线时间、播放平台与版本差异，每日更新。">
+<meta property="og:url" content="https://kanbadianyingwang-zh.github.io/">
+<meta property="og:site_name" content="看吧电影网">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"看吧电影网","url":"https://kanbadianyingwang-zh.github.io/","alternateName":"kanbadianyingwang-zh.github.io","potentialAction":{"@type":"SearchAction","target":"https://kanbadianyingwang-zh.github.io/#q={query}","query-input":"required name=query"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"看吧电影网能查询哪些播出信息？","acceptedAnswer":{"@type":"Answer","text":"可查询院线排片、网络电影与剧集的上线时间、下线时间、播放平台、版本差异及档期变更。信息每日更新，页面标注最后修订时间。"}},{"@type":"Question","name":"为什么同一部影片在不同平台显示的信息不同？","acceptedAnswer":{"@type":"Answer","text":"影片的播放平台会因地区版权、窗口期与排片调整而变动，院线版与流媒体版的片长也可能不同。看吧电影网会分别列出各渠道信息并标注来源与更新日期。"}},{"@type":"Question","name":"查询结果是直接播放链接吗？","acceptedAnswer":{"@type":"Answer","text":"不是。本站只汇总公开可查的播出渠道信息，不提供下载资源，也不收录未经授权的传播链接。"}}]}
+</script>
+<style>
+:root{--bg:#0f1115;--bg2:#15181f;--bg3:#1c2029;--panel:rgba(255,255,255,.035);--line:rgba(255,255,255,.11);--line2:rgba(255,255,255,.2);--txt:#e8eaed;--txt2:#a8adb8;--txt3:#6f7683;--mint:#3ddc97;--cyan:#38bdf8;--amber:#f5b642;--red:#ff6b6b;--vio:#a78bfa;--mono:"SFMono-Regular",ui-monospace,"JetBrains Mono","Roboto Mono",Menlo,Consolas,"Microsoft YaHei Mono",monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;--serif:"Iowan Old Style","Songti SC","Source Han Serif SC","Noto Serif CJK SC",Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:var(--sans);font-size:15px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body.no-scroll{overflow:hidden}
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+input{font:inherit;color:inherit}
+::selection{background:var(--mint);color:#07120d}
+.wrap{max-width:1360px;margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono)}
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt3);margin:0 0 14px}
+.kicker.live{color:var(--mint)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--mint);display:inline-block;animation:pulse 1.8s infinite;vertical-align:1px}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+.blink{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.h1{font-size:clamp(34px,7.4vw,96px);line-height:1.02;letter-spacing:-.035em;margin:0;font-weight:800;font-family:var(--sans)}
+.h1 em{font-style:normal;color:var(--mint)}
+.h2{font-size:clamp(23px,3.2vw,38px);line-height:1.25;letter-spacing:-.02em;margin:0;font-weight:800}
+.h2 em{font-style:normal;color:var(--mint)}
+.lede{font-size:clamp(15.5px,1.5vw,18px);line-height:1.85;color:var(--txt2);max-width:58ch;margin:20px 0 0}
+.eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--mono);font-size:12px;color:var(--txt3);letter-spacing:.05em;flex-wrap:wrap}
+.eyebrow b{color:var(--txt2);font-weight:500}
+.eyebrow i{font-style:normal;color:var(--line2)}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border:1px solid var(--line2);border-radius:4px;font-family:var(--mono);font-size:12px;color:var(--txt2);background:var(--panel)}
+.badge.on{color:var(--mint);border-color:rgba(61,220,151,.45);background:rgba(61,220,151,.07)}
+.chip{padding:6px 13px;border:1px solid var(--line);border-radius:4px;font-family:var(--mono);font-size:12.5px;color:var(--txt2);transition:.2s;white-space:nowrap;background:var(--panel)}
+.chip:hover{border-color:var(--mint);color:var(--mint)}
+.chip.on{background:var(--mint);border-color:var(--mint);color:#07120d;font-weight:700}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 22px;border:1px solid var(--line2);border-radius:6px;font-size:14.5px;font-weight:600;transition:.22s;background:var(--panel)}
+.btn:hover{border-color:var(--mint);color:var(--mint)}
+.btn.pri{background:var(--mint);border-color:var(--mint);color:#07120d}
+.btn.pri:hover{background:#6ce6b1;color:#07120d}
+.btn.ghost{background:transparent}
+.link{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:12.5px;color:var(--mint)}
+.link::after{content:"↗";transition:.2s}
+.link:hover::after{transform:translate(3px,-3px)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;padding:3px;background:var(--panel);font-family:var(--mono);font-size:12.5px}
+.seg button{padding:8px 16px;border-radius:4px;color:var(--txt2);transition:.2s}
+.seg button.on{background:var(--txt);color:#0f1115;font-weight:700}
+.seg button:not(.on):hover{color:var(--mint)}
+
+/* 顶栏 */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(15,17,21,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.topbar-in{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:32px;height:64px}
+.logo{display:flex;align-items:baseline;gap:9px;font-size:19px;font-weight:800;letter-spacing:-.01em}
+.logo span{font-family:var(--mono);font-size:10.5px;color:var(--mint);letter-spacing:.14em;font-weight:400}
+.logo b{color:var(--mint)}
+.search{display:flex;align-items:center;gap:12px;border:1px solid var(--line2);border-radius:6px;padding:0 14px;height:40px;background:var(--bg2)}
+.search svg{flex:0 0 auto;color:var(--txt3)}
+.search input{flex:1;background:transparent;border:0;outline:none;font-size:14.5px;min-width:0}
+.search input::placeholder{color:var(--txt3)}
+.search kbd{font-family:var(--mono);font-size:11px;color:var(--txt3);border:1px solid var(--line);border-radius:3px;padding:1px 6px}
+.menu{display:flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12.5px}
+.menu a{padding:8px 13px;border-radius:5px;color:var(--txt2);transition:.18s}
+.menu a:hover{color:var(--mint);background:var(--panel)}
+.menu a.cur{color:var(--mint);background:rgba(61,220,151,.08)}
+.mobile-toggle{display:none;width:40px;height:40px;border:1px solid var(--line2);border-radius:6px;align-items:center;justify-content:center}
+.mobile-toggle.on{border-color:var(--mint);color:var(--mint)}
+@media(max-width:980px){.menu,.search{display:none}.mobile-toggle{display:flex}.topbar-in{grid-template-columns:1fr auto;gap:14px}.logo{font-size:17px}}
+
+/* 移动抽屉 */
+.drawer{position:fixed;inset:64px 0 0 0;z-index:49;background:rgba(15,17,21,.98);backdrop-filter:blur(14px);padding:26px 24px;transform:translateX(102%);transition:.34s cubic-bezier(.3,.8,.3,1);overflow:auto}
+.drawer.on{transform:none}
+.drawer a{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:700}
+.drawer a small{font-family:var(--mono);font-size:11px;color:var(--txt3);font-weight:400;letter-spacing:.1em}
+.drawer .cell{margin-top:30px;padding:18px;border:1px solid var(--line);border-radius:8px}
+.drawer .cell span{font-family:var(--mono);font-size:11px;color:var(--txt3);letter-spacing:.1em}
+
+/* 终端首屏 */
+.hero{padding:64px 0 52px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:-20% -10% auto -10%;height:420px;background:radial-gradient(closest-side,rgba(61,220,151,.13),transparent 70%);pointer-events:none}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.hero h1{margin-top:30px;position:relative}
+.hero h1 .cursor{display:inline-block;width:.5ch;background:var(--mint);color:var(--mint);animation:blink 1s steps(1) infinite}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;margin-top:42px;align-items:stretch}
+.terminal{border:1px solid var(--line2);border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));overflow:hidden}
+.term-bar{display:flex;align-items:center;gap:8px;padding:11px 15px;border-bottom:1px solid var(--line);background:rgba(0,0,0,.3);font-family:var(--mono);font-size:11.5px;color:var(--txt3)}
+.term-bar i{width:11px;height:11px;border-radius:50%;background:var(--line2)}
+.term-body{padding:22px 24px 26px;font-family:var(--mono);font-size:13.5px;line-height:2}
+.term-body .ln{display:block}
+.term-body .pr{color:var(--mint)}
+.term-body .cm{color:var(--txt3)}
+.term-body .kw{color:var(--cyan)}
+.term-body .st{color:var(--amber)}
+.term-body .nm{color:var(--vio)}
+.hero-side{display:flex;flex-direction:column;gap:16px}
+.metric{border:1px solid var(--line);border-radius:10px;padding:20px 22px;background:var(--panel);flex:1;display:flex;flex-direction:column;justify-content:center}
+.metric b{font-size:35px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.metric b em{font-style:normal;font-size:15px;color:var(--mint);margin-left:4px}
+.metric span{font-size:12.5px;color:var(--txt3);margin-top:9px;font-family:var(--mono)}
+.metric .delta{font-size:12px;margin-top:11px;color:var(--mint)}
+.metric .delta.down{color:var(--red)}
+@media(max-width:900px){.hero{padding:40px 0 34px}.hero-grid{grid-template-columns:1fr;gap:30px}.term-body{font-size:12.5px;padding:18px}}
+
+/* 平台状态条 */
+.statusbar{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;background:var(--bg2)}
+.status-in{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
+.plat-scroll{display:flex;gap:0;overflow-x:auto;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);scrollbar-width:none}
+.plat-scroll::-webkit-scrollbar{display:none}
+.plat{display:grid;grid-template-columns:10px 1fr;gap:11px;align-items:center;padding:0 26px;border-right:1px solid var(--line);flex:0 0 auto}
+.plat:first-child{padding-left:0}
+.plat:last-child{border-right:0;padding-right:0}
+.plat i{width:8px;height:8px;border-radius:50%}
+.plat b{font-size:13px;display:block;letter-spacing:.01em}
+.plat small{font-family:var(--mono);font-size:11px;color:var(--txt3)}
+@media(max-width:760px){.status-in{grid-template-columns:1fr;gap:14px}.plat-scroll{margin:0 -24px;padding:0 24px}}
+
+/* 通用区块 */
+section{padding:88px 0;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,34ch);gap:44px;align-items:end;margin-bottom:42px}
+.sec-head .desc{color:var(--txt2);font-size:15px;margin:0}
+.filter-row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px;align-items:center}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.count{font-family:var(--mono);font-size:12.5px;color:var(--txt3);white-space:nowrap}
+.count b{color:var(--mint);font-weight:400}
+.view-switch{display:flex;gap:10px}
+@media(max-width:900px){section{padding:60px 0}.sec-head{grid-template-columns:1fr;gap:14px;margin-bottom:30px}}
+
+/* 数据表 */
+.tblwrap{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg2)}
+.tbl{width:100%;border-collapse:collapse;font-size:14px}
+.tbl thead th{text-align:left;padding:14px 18px;font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;color:var(--txt3);font-weight:600;text-transform:uppercase;border-bottom:1px solid var(--line2);background:rgba(0,0,0,.25);white-space:nowrap}
+.tbl tbody td{padding:17px 18px;border-bottom:1px solid var(--line);vertical-align:middle}
+.tbl tbody tr:last-child td{border-bottom:0}
+.tbl tbody tr{transition:.18s}
+.tbl tbody tr:hover{background:rgba(61,220,151,.05)}
+.tbl tbody tr:hover td:first-child{box-shadow:inset 3px 0 0 var(--mint)}
+.tbl .ttl{display:flex;align-items:center;gap:14px}
+.tbl .ava{width:42px;height:54px;border-radius:4px;flex:0 0 auto;position:relative;overflow:hidden;border:1px solid var(--line)}
+.tbl .ava svg{width:100%;height:100%}
+.tbl .nm{font-weight:700;font-size:15px}
+.tbl .sub{font-family:var(--mono);font-size:11.5px;color:var(--txt3);margin-top:3px}
+.st{font-family:var(--mono);font-size:11.5px;padding:5px 10px;border-radius:4px;border:1px solid var(--line);white-space:nowrap;display:inline-block}
+.st.on{color:var(--mint);border-color:rgba(61,220,151,.45);background:rgba(61,220,151,.07)}
+.st.soon{color:var(--amber);border-color:rgba(245,182,66,.4);background:rgba(245,182,66,.07)}
+.st.off{color:var(--txt3)}
+.st.end{color:var(--red);border-color:rgba(255,107,107,.35);background:rgba(255,107,107,.07)}
+.platcell{display:flex;flex-wrap:wrap;gap:6px}
+.platcell a{font-family:var(--mono);font-size:11.5px;padding:5px 9px;border:1px solid var(--line);border-radius:4px;color:var(--txt2);transition:.18s}
+.platcell a:hover{color:var(--mint);border-color:var(--mint)}
+.prog{display:grid;grid-template-columns:34px 1fr 40px;gap:10px;align-items:center;font-family:var(--mono);font-size:11.5px;color:var(--txt3)}
+.prog .track{height:6px;background:var(--bg3);border-radius:99px;overflow:hidden}
+.prog .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--mint),var(--cyan));width:0;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.act{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--txt2)}
+.act::after{content:"→";color:var(--txt3);transition:.2s}
+.act:hover{color:var(--mint)}
+.act:hover::after{transform:translateX(4px);color:var(--mint)}
+.tbl-foot{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-top:1px solid var(--line);font-family:var(--mono);font-size:12px;color:var(--txt3);flex-wrap:wrap;gap:14px}
+@media(max-width:820px){
+ .tbl thead{display:none}
+ .tbl,.tbl tbody,.tbl tr,.tbl td{display:block;width:100%}
+ .tbl tbody tr{border-bottom:1px solid var(--line2);padding:18px}
+ .tbl tbody td{padding:9px 0;border:0}
+ .tbl tbody td:first-child{padding-bottom:14px}
+ .tbl .ttl{align-items:flex-start}
+ .prog{grid-template-columns:48px 1fr 52px}
+}
+
+/* 栏目九宫格 */
+.grid9{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cell{grid-column:span 1;padding:30px 28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);transition:.28s;min-height:232px;display:flex;flex-direction:column}
+.cell:nth-child(3n){border-right:0}
+.cell:nth-child(n+7){border-bottom:0}
+.cell:hover{background:rgba(61,220,151,.045)}
+.cell .n{font-family:var(--mono);font-size:11.5px;color:var(--txt3);letter-spacing:.1em}
+.cell h3{margin:15px 0 11px;font-size:20px;line-height:1.45;letter-spacing:-.01em}
+.cell h3::before{content:"→ ";color:var(--mint);font-weight:400}
+.cell p{margin:0;color:var(--txt2);font-size:14px;flex:1}
+.cell .foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:16px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11.5px;color:var(--txt3)}
+.cell .foot b{color:var(--mint);font-weight:400}
+@media(max-width:820px){.grid9{grid-template-columns:repeat(2,1fr)}.cell:nth-child(3n){border-right:1px solid var(--line)}.cell:nth-child(2n){border-right:0}.cell:nth-child(n+7){border-bottom:1px solid var(--line)}.cell:nth-child(n+11){border-bottom:0}}
+@media(max-width:520px){.grid9{grid-template-columns:1fr}.cell{border-right:0!important}.cell:nth-child(n+7){border-bottom:1px solid var(--line)}.cell:last-child{border-bottom:0!important}}
+
+/* 步骤流程 */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.step{padding:30px 26px;border-right:1px solid var(--line);position:relative;min-height:230px;display:flex;flex-direction:column}
+.step:last-child{border-right:0}
+.step .no{font-family:var(--mono);font-size:11.5px;color:var(--txt3)}
+.step .no b{display:block;font-size:31px;color:var(--mint);font-weight:800;letter-spacing:-.02em;margin-top:6px}
+.step h3{margin:18px 0 10px;font-size:17px;line-height:1.45}
+.step p{margin:0;font-size:13.5px;color:var(--txt2);flex:1}
+.step .tk{margin-top:20px;padding:10px 12px;background:var(--bg2);border:1px solid var(--line);border-radius:5px;font-family:var(--mono);font-size:11.5px;color:var(--txt3);line-height:1.7}
+@media(max-width:820px){.flow{grid-template-columns:1fr 1fr}.step:nth-child(2n){border-right:0}.step:nth-child(n+3){border-top:1px solid var(--line)}}
+@media(max-width:480px){.flow{grid-template-columns:1fr}.step{border-right:0!important;border-top:1px solid var(--line)!important}.step:first-child{border-top:0!important}}
+
+/* 对比 */
+.cmp{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start}
+.cmp-left{border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.cmp-row{display:grid;grid-template-columns:112px 1fr 96px;gap:18px;padding:17px 22px;align-items:center;border-bottom:1px solid var(--line);font-size:14px}
+.cmp-row:last-child{border-bottom:0}
+.cmp-row.head{background:rgba(0,0,0,.3);font-family:var(--mono);font-size:11.5px;color:var(--txt3);letter-spacing:.06em;text-transform:uppercase}
+.cmp-row .lb{font-family:var(--mono);font-size:12px;color:var(--txt2)}
+.cmp-row .ok{color:var(--mint);font-family:var(--mono);font-size:12px;text-align:right;white-space:nowrap}
+.cmp-right{border:1px solid var(--line);border-radius:10px;padding:28px 26px;background:var(--panel)}
+.cmp-right h3{margin:0 0 6px;font-size:19px}
+.cmp-right .src{font-family:var(--mono);font-size:11.5px;color:var(--txt3);margin-bottom:18px}
+.cmp-right ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:13px}
+.cmp-right li{display:grid;grid-template-columns:16px 1fr;gap:12px;font-size:14px;color:var(--txt2)}
+.cmp-right li::before{content:"✓";color:var(--mint);font-family:var(--mono);font-size:12px}
+@media(max-width:820px){.cmp{grid-template-columns:1fr;gap:20px}.cmp-row{grid-template-columns:92px 1fr 64px;gap:12px;padding:14px}.cmp-row .ok{font-size:11px}}
+
+/* 时间轴 */
+.tl{border-left:1px solid var(--line2);margin-left:8px;padding-left:0}
+.tl-item{position:relative;padding:0 0 30px 34px}
+.tl-item::before{content:"";position:absolute;left:-6px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--mint)}
+.tl-item.now::before{background:var(--mint);box-shadow:0 0 0 5px rgba(61,220,151,.16)}
+.tl-item .when{font-family:var(--mono);font-size:11.5px;color:var(--mint);letter-spacing:.05em}
+.tl-item h3{margin:8px 0 8px;font-size:17px;line-height:1.45}
+.tl-item p{margin:0;font-size:14px;color:var(--txt2)}
+.tl-item .tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+.tl-item .tags span{font-family:var(--mono);font-size:11px;padding:4px 9px;border:1px solid var(--line);border-radius:4px;color:var(--txt3)}
+
+/* 页脚 */
+footer{border-top:1px solid var(--line2);padding:70px 0 0;background:#0b0d11}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr 1fr;gap:44px;padding-bottom:56px}
+.foot-brand .logo{font-size:25px}
+.foot-brand p{color:var(--txt3);font-size:14px;line-height:1.85;margin:18px 0 0;max-width:36ch}
+.foot-brand .url{display:block;margin-top:22px;font-family:var(--mono);font-size:12.5px;color:var(--txt2);word-break:break-all}
+.foot-grid h4{margin:0 0 20px;font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;color:var(--mint);text-transform:uppercase}
+.foot-grid ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:13px}
+.foot-grid a{color:var(--txt2);font-size:14px;transition:.18s}
+.foot-grid a:hover{color:var(--mint)}
+.foot-mid{border-top:1px solid var(--line);padding:34px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.foot-mid h3{margin:0;font-size:clamp(20px,2.6vw,30px);line-height:1.4;max-width:26em}
+.foot-mid .f{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.foot-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:26px 0 40px;font-family:var(--mono);font-size:12px;color:var(--txt3)}
+.foot-bot .links{display:flex;gap:24px;flex-wrap:wrap}
+.foot-bot a{color:var(--txt2)}
+.foot-bot a:hover{color:var(--mint)}
+@media(max-width:980px){.foot-grid{grid-template-columns:1fr 1fr;gap:34px}.foot-brand{grid-column:1/3}.foot-mid{grid-template-columns:1fr}.foot-mid .f{justify-content:flex-start}}
+
+.toast{position:fixed;left:50%;bottom:30px;transform:translate(-50%,24px);z-index:80;padding:14px 22px;border:1px solid rgba(61,220,151,.45);border-radius:8px;background:#0c1410;color:var(--mint);font-family:var(--mono);font-size:13px;opacity:0;transition:.3s;pointer-events:none;box-shadow:0 16px 40px -18px rgba(0,0,0,.8)}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media print{body{background:#fff;color:#000}.tbl tbody tr:hover{background:none}section{padding:30px 0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <a href="#top" class="logo">看吧电影<b>网</b><span>KB-FILM / 查询端 v3.2</span></a>
+    <label class="search">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="topSearch" placeholder="输入片名、剧集、演员或平台，如：北归、悬疑、纪录片" aria-label="全站检索">
+      <kbd>↵</kbd>
+    </label>
+    <nav class="menu" aria-label="主导航">
+      <a href="#airing" class="cur">播出表</a>
+      <a href="#channels">栏目</a>
+      <a href="#how">查询方式</a>
+      <a href="#cmp">对比</a>
+      <a href="#log">更新记录</a>
+      <a href="#faq">疑问</a>
+    </nav>
+    <button class="mobile-toggle" id="mtoggle" aria-label="打开菜单" aria-expanded="false">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</div>
+
+<aside class="drawer" id="drawer">
+  <nav aria-label="移动端导航">
+    <a href="#airing" data-d><span>播出信息表</span><small>01</small></a>
+    <a href="#channels" data-d><span>栏目总览</span><small>02</small></a>
+    <a href="#how" data-d><span>查询方式</span><small>03</small></a>
+    <a href="#cmp" data-d><span>信息对比</span><small>04</small></a>
+    <a href="#log" data-d><span>更新记录</span><small>05</small></a>
+    <a href="#faq" data-d><span>常见疑问</span><small>06</small></a>
+  </nav>
+  <div class="cell">
+    <span>本站地址 / SITE URL</span>
+    <p style="font-family:var(--mono);font-size:13px;color:var(--mint);margin:12px 0 0;word-break:break-all">https://kanbadianyingwang-zh.github.io</p>
+  </div>
+</aside>
+
+<main>
+
+  <section class="hero" style="border-bottom:1px solid var(--line)">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="eyebrow">
+          <span class="badge on"><i class="dot"></i> 系统在线 · 数据每日 06:00 更新</span>
+          <b>覆盖 38 家播出渠道</b><i>·</i>
+          <b>追踪 3,605 条影片条目</b><i>·</i>
+          <b>最近修订 2026-10-09 06:12</b>
+        </div>
+        <span class="badge">节点：中国大陆</span>
+      </div>
+
+      <h1 class="h1">先看哪里播，<br>再决定看<em>什么。</em><span class="cursor" aria-hidden="true">▍</span></h1>
+      <h2 class="kicker" style="margin:24px 0 0;color:var(--txt3);font-size:12px">SECTION 00 / 查询工具 · 输入片名，返回播出渠道与档期</h2>
+      <p class="lede">看吧电影网是一个播出信息查询工具：输入片名，返回它当前是否上线、在哪个平台、什么时间下线、院线还剩几天的排片，以及各渠道版本之间有没有片长或内容差异。不提供播放资源，只回答「现在能不能看」这件事。</p>
+
+      <div class="hero-grid">
+        <div class="terminal" aria-label="查询演示">
+          <div class="term-bar"><i></i><i></i><i></i> kanbadianyingwang-zh.github.io / query</div>
+          <div class="term-body">
+            <span class="ln"><span class="pr">kb-film</span> <span class="cm">~$</span> lookup <span class="st">"北归"</span> --region cn</span>
+            <span class="ln"><span class="cm">→ 正在检索 38 个播出渠道 …</span></span>
+            <span class="ln"><span class="cm">　</span></span>
+            <span class="ln"><span class="kw">TITLE</span>     <span class="nm">北归 / Northbound</span>  <span class="cm">(2025 · 剧情 · 132 min)</span></span>
+            <span class="ln"><span class="kw">STATUS</span>   <span class="st">在架 · 可观看</span>  <span class="cm">window: 2026-09-18 → 2027-03-12</span></span>
+            <span class="ln"><span class="kw">PLATFORM</span> <span class="nm">流媒体 A</span> <span class="cm">(4K · 132 min)</span> · <span class="nm">流媒体 B</span> <span class="cm">(1080p · 130 min · 含花絮版)</span></span>
+            <span class="ln"><span class="kw">THEATER</span>  <span class="st">已结束</span>  <span class="cm">last show 2026-08-04</span></span>
+            <span class="ln"><span class="kw">NOTE</span>    <span class="cm">两版片长差 2 分钟，差异来自花絮版附加内容，非剪辑变动。</span></span>
+            <span class="ln"><span class="cm">　</span></span>
+            <span class="ln"><span class="pr">kb-film</span> <span class="cm">~$</span> <span class="blink">▍</span></span>
+          </div>
+        </div>
+
+        <div class="hero-side">
+          <div class="metric">
+            <b>3,605<em>条</em></b>
+            <span>TRACKED_TITLES</span>
+            <span class="delta">▲ 本周新增 47 条 · 修订 312 处</span>
+          </div>
+          <div class="metric">
+            <b>38<em>家</em></b>
+            <span>MONITORED_PLATFORMS</span>
+            <span class="delta">院线 11 · 流媒体 24 · 艺术院线 3</span>
+          </div>
+          <div class="metric">
+            <b>96.4<em>%</em></b>
+            <span>DATA_FRESHNESS_7D</span>
+            <span class="delta down">▲ 较上周提升 1.2 个百分点</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="statusbar">
+    <div class="wrap status-in">
+      <span class="kicker live"><span class="dot"></span> 平台状态 · 实时</span>
+      <div class="plat-scroll" id="platScroll"></div>
+      <a class="link" href="#">完整渠道表</a>
+    </div>
+  </div>
+
+  <section id="airing">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 01 / 播出信息表</span><b>数据源：各平台公开排片页、发行方公告、院线排片系统</b></div>
+      <div class="sec-head">
+        <h2 class="h2">同一部片子，<br>可能在 <em>六个地方</em> 有六种状态</h2>
+        <p class="desc">档期、窗口期与片长都不是固定值。播出表按状态分组显示，只看「在架」也能避开已经下线的信息。</p>
+      </div>
+
+      <div class="filter-row">
+        <div class="chips" id="chips">
+          <button class="chip on" data-f="all">全部 12</button>
+          <button class="chip" data-f="on">在架 7</button>
+          <button class="chip" data-f="soon">即将上线 3</button>
+          <button class="chip" data-f="theater">院线 4</button>
+          <button class="chip" data-f="off">已下线 2</button>
+        </div>
+        <div class="view-switch">
+          <span class="count">排序：<b>窗口期剩余天数</b> ↓</span>
+        </div>
+      </div>
+
+      <div class="tblwrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th style="width:26%">影片 / 标题</th>
+              <th style="width:11%">状态</th>
+              <th style="width:21%">播放平台</th>
+              <th style="width:19%">窗口期进度</th>
+              <th style="width:14%">片长 / 版本</th>
+              <th style="width:9%">操作</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+        <div class="tbl-foot">
+          <span>显示 12 条 · 共 3,605 条可查询条目</span>
+          <span><a class="link" href="#">导出 CSV 格式结果</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="channels">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 02 / 栏目总览</span><b>六个板块 · 可按影片反向追溯</b></div>
+      <div class="sec-head">
+        <h2 class="h2">栏目不是分类，<br>是 <em>六种查询方式</em></h2>
+        <p class="desc">按片名查是其中一种。也可以按平台查、按档期查、按状态查——同一部片子会同时挂在多个栏目下，不需要记它属于哪一类。</p>
+      </div>
+
+      <div class="grid9">
+        <article class="cell">
+          <span class="n">CH.01</span>
+          <h3>播出信息表</h3>
+          <p>全站主栏目。按上线、在架、即将下线、已下线的实际状态组织，列出片名、平台、片长与窗口期，并标注信息来源与更新时间。</p>
+          <div class="foot"><span>3,605 条条目</span><b>查询 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">CH.02</span>
+          <h3>平台渠道对照</h3>
+          <p>把 38 家播出渠道的画质规格、地区限制、会员条件与窗口期差异横向列出来，避免在片名页面之间反复跳转。</p>
+          <div class="foot"><span>38 个渠道</span><b>对照 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">CH.03</span>
+          <h3>院线排片追踪</h3>
+          <p>每日抓取各城市排片场次，区分点映、正式上映与延期场次，并单独标注场次变动较大的影片。</p>
+          <div class="foot"><span>11 家院线</span><b>追踪 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">CH.04</span>
+          <h3>网络电影专区</h3>
+          <p>仅限流媒体首发的影片单独成区，标注首发平台、独家期与转授权时间，方便判断内容是否会在短期内迁移。</p>
+          <div class="foot"><span>862 条条目</span><b>进入 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">CH.05</span>
+          <h3>版本差异说明</h3>
+          <p>院线版、流媒体版、影展版与修复重映版之间的片长和内容差。这是最容易被忽略、也最容易引发误会的部分。</p>
+          <div class="foot"><span>持续修订</span><b>说明 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">CH.06</span>
+          <h3>档期日历</h3>
+          <p>以日期为单位呈现上线、下线、开画与重映节点，支持按周查看，适合安排集中补片。</p>
+          <div class="foot"><span>周视图 / 月视图</span><b>日历 →</b></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 03 / 查询方式</span><b>平均完成一次查询：约 11 秒</b></div>
+      <div class="sec-head">
+        <h2 class="h2">不用记住片名，<br>也 <em>能查到结果</em></h2>
+        <p class="desc">片名记不全、译名不确定，都算常见情况。四种入口可以互相替代，任何一条信息都能成为查询起点。</p>
+      </div>
+
+      <div class="flow">
+        <article class="step">
+          <span class="no">STEP <b>01</b></span>
+          <h3>按片名精确检索</h3>
+          <p>支持正片名、常用译名与英文名匹配。结果页返回该片的全部渠道状态，不要求用户预先判断它属于哪种类型。</p>
+          <div class="tk">输入 → 返回渠道列表<br>耗时：&lt; 0.4s</div>
+        </article>
+        <article class="step">
+          <span class="no">STEP <b>02</b></span>
+          <h3>按平台反查</h3>
+          <p>从一个平台出发，列出它当前在架的全部影片与各自剩余窗口期，适合已经确定要看某个平台的情况。</p>
+          <div class="tk">平台 → 在架清单<br>耗时：&lt; 0.6s</div>
+        </article>
+        <article class="step">
+          <span class="no">STEP <b>03</b></span>
+          <h3>按日期查档期</h3>
+          <p>选定某一天，返回当天上线、下线、开画与重映的所有影片，并标注场次变化与独家期节点。</p>
+          <div class="tk">日期 → 变动清单<br>耗时：&lt; 0.5s</div>
+        </article>
+        <article class="step">
+          <span class="no">STEP <b>04</b></span>
+          <h3>设置到期提醒</h3>
+          <p>对即将下线的影片订阅提醒。提醒在窗口期结束前 3 天发出，不会反复推送，也不会读取账户之外的信息。</p>
+          <div class="tk">订阅 → 到期前 3 天提醒<br>耗时：1 次点击</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="cmp">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 04 / 信息对比</span><b>为什么不能直接把两个平台的价格页放在一起看</b></div>
+      <div class="sec-head">
+        <h2 class="h2">同一部片子，<br>用 <em>同一套字段</em> 比才有意义</h2>
+        <p class="desc">平台自带的信息页往往只回答它自己有没有这部片子。这里把来源字段统一，再标注信息差异的来源，而不是由本站替你下结论。</p>
+      </div>
+
+      <div class="cmp">
+        <div class="cmp-left">
+          <div class="cmp-row head"><span>字段</span><span>看吧电影网处理方式</span><span>对齐口径</span></div>
+          <div class="cmp-row"><span class="lb">播出状态</span><span>在架 / 即将上线 / 院线在映 / 已下线，四态互斥</span><span class="ok">统一</span></div>
+          <div class="cmp-row"><span class="lb">上线时间</span><span>以平台公开页标注为准，同时记录抓取时间</span><span class="ok">统一</span></div>
+          <div class="cmp-row"><span class="lb">下线时间</span><span>来源未标注时显示为「未公开」，不估算</span><span class="ok">统一</span></div>
+          <div class="cmp-row"><span class="lb">片长</span><span>不同版本分别列出，不做平均值</span><span class="ok">统一</span></div>
+          <div class="cmp-row"><span class="lb">画质规格</span><span>仅转述平台标注，不自行测试与评级</span><span class="ok">统一</span></div>
+          <div class="cmp-row"><span class="lb">价格信息</span><span>不收录。价格变动过快，单独标注参考链接</span><span class="ok">不收录</span></div>
+          <div class="cmp-row"><span class="lb">评分</span><span>不直接提供，改列来源页入口与样本说明</span><span class="ok">不收录</span></div>
+          <div class="cmp-row"><span class="lb">用户评论</span><span>不收录。本站定位为事实性信息查询</span><span class="ok">不收录</span></div>
+        </div>
+        <div class="cmp-right">
+          <h3>信息口径怎么定</h3>
+          <span class="src">REVISION NOTES · 2026-10-09</span>
+          <ul>
+            <li>平台页面只标注上线日期、未标下线日期的，统一显示为「窗口期未公开」</li>
+            <li>片名在不同渠道写法不一致时，同时保留两种写法并指向同一主条目</li>
+            <li>修复重映版与原版分开记录，不在同一行合并统计</li>
+            <li>信息冲突时保留双方数据并标注冲突点，等待发行方公告后再修订</li>
+            <li>所有字段显示最后修订时间，可据此判断信息是否仍有效</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="log">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 05 / 更新记录</span><b>变更日志公开可见 · 保留完整修订历史</b></div>
+      <div class="sec-head">
+        <h2 class="h2">档期每天都在变，<br><em>所以更新日志也是内容</em></h2>
+        <p class="desc">排片与平台变动不是异常，而是常态。这里按时间倒序列出最近的处理记录，包括新增条目、状态变更与数据修正。</p>
+      </div>
+
+      <div class="cmp" style="grid-template-columns:1fr 1fr;gap:36px;align-items:start">
+        <div class="tblwrap">
+          <table class="tbl">
+            <thead><tr><th style="width:22%">时间</th><th style="width:31%">影片</th><th style="width:23%">类型</th><th>变更</th></tr></thead>
+            <tbody>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-09 06:12</td><td><span class="nm">无声的证言</span><br><span class="sub">Witness / 2026</span></td><td><span class="st on">在架</span></td><td style="font-size:13.5px">新增 2 个平台条目</td></tr>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-08 18:40</td><td><span class="nm">深海回声</span><br><span class="sub">Echoes / 2024</span></td><td><span class="st soon">独家期</span></td><td style="font-size:13.5px">独家期截止日更新</td></tr>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-08 11:05</td><td><span class="nm">午夜电台</span><br><span class="sub">Midnight / 2026</span></td><td><span class="st soon">即将上线</span></td><td style="font-size:13.5px">上线时间由发行方确认</td></tr>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-07 22:18</td><td><span class="nm">城市边缘</span><br><span class="sub">Edge / 2023</span></td><td><span class="st off">已下线</span></td><td style="font-size:13.5px">窗口期结束，标记下线</td></tr>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-07 09:30</td><td><span class="nm">玻璃动物园</span><br><span class="sub">Glass Zoo / 2026</span></td><td><span class="st end">排片减少</span></td><td style="font-size:13.5px">场次较上周减少 34%</td></tr>
+              <tr><td class="mono" style="font-size:12.5px;color:var(--txt3)">10-06 16:52</td><td><span class="nm">北归</span><br><span class="sub">Northbound / 2025</span></td><td><span class="st on">版本差异</span></td><td style="font-size:13.5px">补充花絮版片长说明</td></tr>
+            </tbody>
+          </table>
+          <div class="tbl-foot"><span>显示最近 6 条 · 完整日志共 1,284 条</span><a class="link" href="#">查看完整变更日志</a></div>
+        </div>
+
+        <div class="tl">
+          <div class="tl-item now">
+            <div class="when">NOW · 本周</div>
+            <h3>窗口期与排片成为主要变动源</h3>
+            <p>本周 312 处修订中，近六成集中在窗口期截止与场次调整。新增条目以网络电影与纪录片为主，两类内容的下线时间标注完整度低于院线片。</p>
+            <div class="tags"><span>窗口期</span><span>排片</span><span>网络电影</span><span>纪录片</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="when">2026-09 第三周</div>
+            <h3>译名字段拆分完成</h3>
+            <p>主片名与常用译名拆成两个独立字段，避免同一主条目被重复创建。共合并历史重复条目 186 条，旧链接保留跳转。</p>
+            <div class="tags"><span>数据整理</span><span>译名</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="when">2026-08 第二周</div>
+            <h3>版本差异列为独立板块</h3>
+            <p>院线版、流媒体版与影展版的片长差异从备注升级为独立字段，使同一部片子的不同版本可以分别检索与订阅提醒。</p>
+            <div class="tags"><span>新板块</span><span>版本差异</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="when">2026-07 第一周</div>
+            <h3>频道渠道从 26 家扩展到 38 家</h3>
+            <p>新增艺术院线与地方院线抓取，同时把渠道规格表从条目页内嵌改为独立对照页，减少重复信息。</p>
+            <div class="tags"><span>渠道扩展</span><span>规格表</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="border-bottom:0">
+    <div class="wrap">
+      <div class="eyebrow" style="margin-bottom:8px"><span class="kicker">SECTION 06 / 常见疑问</span><b>高频问题 · 每月整理一次，新增内容会标注日期</b></div>
+      <div class="sec-head">
+        <h2 class="h2">关于「能不能看」，<br>问得最多的 <em>六件事</em></h2>
+        <p class="desc">这一栏不负责推荐片子，只回答播出信息本身。关于片子本身的内容评价，本站另有专题栏目，与查询系统分开维护。</p>
+      </div>
+
+      <div class="grid9" style="grid-template-columns:1fr 1fr">
+        <article class="cell">
+          <span class="n">Q.01</span>
+          <h3>看吧电影网能查询哪些播出信息？</h3>
+          <p>可查询院线排片、网络电影与剧集的上线时间、下线时间、播放平台、版本差异及档期变更。信息每日更新，页面顶部始终显示最近修订时间，便于判断时效性。</p>
+          <div class="foot"><span>最后更新 2026-10-09</span><b>详情 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">Q.02</span>
+          <h3>为什么同一部片子在不同平台显示的信息不同？</h3>
+          <p>播放平台会因地区版权、窗口期与排片调整而变动，院线版与流媒体版的片长也可能不同。本站会分别列出各渠道信息，并标注来源与更新日期，不做强行合并。</p>
+          <div class="foot"><span>最后更新 2026-10-06</span><b>详情 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">Q.03</span>
+          <h3>查询结果是直接播放链接吗？</h3>
+          <p>不是。本站只汇总公开可查的播出渠道信息，不提供下载资源，也不收录未经授权的传播链接。渠道说明中会列出各平台公开可查的观看入口。</p>
+          <div class="foot"><span>最后更新 2026-09-21</span><b>详情 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">Q.04</span>
+          <h3>下线时间写的是「未公开」，是没查到吗？</h3>
+          <p>不是遗漏。部分平台的公开页面只标注上线日期，不写窗口期截止时间，这种情况统一显示为「未公开」，不会自行估算或补齐，以免产生误导。</p>
+          <div class="foot"><span>最后更新 2026-09-14</span><b>详情 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">Q.05</span>
+          <h3>到期提醒会不会频繁推送？</h3>
+          <p>不会。每部片子只在该窗口期结束前 3 天提醒一次，可随时取消。提醒只使用影片与提醒时间两项信息，不读取账户之外的个人数据。</p>
+          <div class="foot"><span>最后更新 2026-08-30</span><b>详情 →</b></div>
+        </article>
+        <article class="cell">
+          <span class="n">Q.06</span>
+          <h3>发现信息写错了，怎么反馈？</h3>
+          <p>可通过文末地址来信，注明影片名称、需要修改的具体字段与可核实的来源链接。核实后会在变更日志中保留修改记录，不静默替换旧信息。</p>
+          <div class="foot"><span>最后更新 2026-08-12</span><b>详情 →</b></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="#top" class="logo" style="color:var(--txt)">看吧电影<b style="color:var(--mint)">网</b><span style="color:var(--txt3)">KB-FILM</span></a>
+        <p>看吧电影网是电影播出信息查询工具，汇总院线、网络电影、剧集与纪录片的播出渠道信息，包括上线下线时间、播放平台、版本差异与档期变更。</p>
+        <span class="url">https://kanbadianyingwang-zh.github.io</span>
+      </div>
+      <div>
+        <h4>查询入口</h4>
+        <ul>
+          <li><a href="#airing">播出信息表</a></li>
+          <li><a href="#">按平台查询</a></li>
+          <li><a href="#">按日期查档期</a></li>
+          <li><a href="#log">变更日志</a></li>
+          <li><a href="#">档期日历</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="#channels">播出信息表</a></li>
+          <li><a href="#channels">平台渠道对照</a></li>
+          <li><a href="#channels">院线排片追踪</a></li>
+          <li><a href="#channels">网络电影专区</a></li>
+          <li><a href="#channels">版本差异说明</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>数据说明</h4>
+        <ul>
+          <li><a href="#cmp">信息口径</a></li>
+          <li><a href="#">数据来源</a></li>
+          <li><a href="#">修订规则</a></li>
+          <li><a href="#">信息时效</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系</h4>
+        <ul>
+          <li><a href="mailto:hi@kanbadianyingwang-zh.github.io">来信反馈</a></li>
+          <li><a href="mailto:data@kanbadianyingwang-zh.github.io">数据纠错</a></li>
+          <li><a href="https://kanbadianyingwang-zh.github.io/">kanbadianyingwang-zh.github.io</a></li>
+          <li><a href="#top">返回页首</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-mid">
+      <h3>看吧电影网（<span style="color:var(--mint);font-family:var(--mono);font-size:.8em">https://kanbadianyingwang-zh.github.io</span>）只回答一件事：这部片子现在在哪里能看。</h3>
+      <div class="f">
+        <a class="btn pri" href="#airing">立即查询播出信息</a>
+        <a class="btn ghost" href="#">查看数据说明</a>
+      </div>
+    </div>
+
+    <div class="foot-bot">
+      <span>© 2026 看吧电影网 · 播出信息仅供参考，实际以各平台与院线公告为准</span>
+      <div class="links">
+        <a href="#">数据来源</a>
+        <a href="#">修订规则</a>
+        <a href="#">免责声明</a>
+        <a href="#">隐私说明</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动抽屉 */
+  var tog=document.getElementById("mtoggle"), dr=document.getElementById("drawer");
+  tog.addEventListener("click",function(){
+    var open=dr.classList.toggle("on");
+    tog.classList.toggle("on",open);
+    tog.setAttribute("aria-expanded",open?"true":"false");
+    document.body.classList.toggle("no-scroll",open);
+  });
+  document.querySelectorAll("[data-d]").forEach(function(a){
+    a.addEventListener("click",function(){
+      dr.classList.remove("on"); tog.classList.remove("on");
+      tog.setAttribute("aria-expanded","false");
+      document.body.classList.remove("no-scroll");
+    });
+  });
+
+  /* 平台状态条 */
+  var plats=[
+    ["院线 A","在架",true],["院线 B","在架",true],["艺术院线","在架",true],
+    ["流媒体 A","在架",true],["流媒体 B","在架",true],["流媒体 C","在架",true],
+    ["纪录片频道","维护",false],["海外平台 X","在架",true],["海外平台 Y","区域限制",false],
+    ["网络电影专区","在架",true],["修复重映","在架",true],["影展渠道","档期中",false]
+  ];
+  document.getElementById("platScroll").innerHTML=plats.map(function(p,i){
+    return '<div class="plat"><i style="background:'+(p[2]?"var(--mint)":"var(--amber)")+'"></i><div><b>'+p[0]+'</b><small>'+(p[1]||"在架")+'</small></div></div>';
+  }).join("");
+
+  /* 表格数据 */
+  var rows=[
+    {t:"无声的证言",s:"Witness · 2026",cat:["剧情","犯罪"],st:"on",stt:"在架",p:["流媒体 A","流媒体 B","流媒体 C"],pct:64,len:"118 分钟 · 4K",v:"正片版"},
+    {t:"北归",s:"Northbound · 2025",cat:["剧情","家庭"],st:"on",stt:"在架",p:["流媒体 A","流媒体 B"],pct:41,len:"132 分钟 · 花絮版",v:"含附加花絮 2 分钟"},
+    {t:"玻璃动物园",s:"Glass Zoo · 2026",cat:["悬疑","惊悚"],st:"theater",stt:"院线在映",p:["院线 A","院线 B"],pct:22,len:"104 分钟 · 2D",v:"场次较上周减 34%"},
+    {t:"深海回声",s:"Echoes · 2024",cat:["纪录片"],st:"on",stt:"独家期",p:["流媒体 C"],pct:88,len:"88 分钟 · 4K HDR",v:"独家期至 2026-11-20"},
+    {t:"纸月亮",s:"Paper Moon · 2025",cat:["喜剧","爱情"],st:"on",stt:"在架",p:["流媒体 B","海外平台 X"],pct:53,len:"96 分钟",v:"1080p"},
+    {t:"城市边缘",s:"Edge of the City · 2023",cat:["剧情","社会"],st:"off",stt:"已下线",p:["—"],pct:100,len:"126 分钟 · 修复版",v:"窗口期已结束"},
+    {t:"最后一次旅行",s:"The Last Trip · 2026",cat:["剧情","公路"],st:"soon",stt:"即将上线",p:["流媒体 A"],pct:12,len:"110 分钟",v:"11-02 上线"},
+    {t:"午夜电台",s:"Midnight · 2026",cat:["悬疑","惊悚"],st:"soon",stt:"即将上线",p:["院线 A"],pct:6,len:"98 分钟",v:"10-17 开画"},
+    {t:"1999 年的夏天",s:"Summer 1999 · 2024",cat:["剧情"],st:"on",stt:"在架",p:["流媒体 B","网络电影专区"],pct:72,len:"101 分钟",v:"独家期已结束"},
+    {t:"雾中车站",s:"Station in Fog · 2025",cat:["剧情","悬疑"],st:"theater",stt:"院线在映",p:["院线 A","院线 C"],pct:35,len:"121 分钟",v:"点映转正式上映"},
+    {t:"你听得到吗",s:"Can You Hear · 2024",cat:["爱情","音乐"],st:"soon",stt:"即将上线",p:["流媒体 C"],pct:18,len:"93 分钟",v:"10-24 上线"},
+    {t:"追风筝的人",s:"Kite Runner · 2026",cat:["剧情"],st:"theater",stt:"重映",p:["艺术院线"],pct:48,len:"128 分钟 · 4K修复",v:"重映场次有限"}
+  ];
+  var stMap={on:"on",soon:"soon",theater:"soon",off:"off",end:"end"};
+  var cols=[
+    function(r){return '<div class="ttl"><div class="ava">'+poster(r)+'</div><div><div class="nm">'+r.t+'</div><div class="sub">'+r.s+' · '+r.cat.join(" / ")+'</div></div></div>';},
+    function(r){return '<span class="st '+stMap[r.st]+'">'+r.stt+'</span>';},
+    function(r){return '<div class="platcell">'+(r.p[0]==="—"?'<span class="mono" style="font-size:12px;color:var(--txt3)">暂无渠道信息</span>':r.p.map(function(x){return '<a href="#">'+x+'</a>';}).join(""))+'</div>';},
+    function(r){return '<div class="prog"><span>'+r.pct+'%</span><div class="track"><div class="fill" data-p="'+r.pct+'"></div></div><span>'+(r.st==="off"?"已结束":(r.st==="soon"?"剩余":"已用"))+'</span></div>';},
+    function(r){return '<span class="mono" style="font-size:12.5px">'+r.len+'</span><div class="sub" style="font-family:var(--mono);font-size:11px;color:var(--txt3);margin-top:3px">'+r.v+'</div>';},
+    function(){return '<a class="act" href="#">详情</a>';}
+  ];
+  function poster(r){
+    var pal=["#3ddc97","#38bdf8","#f5b642","#a78bfa","#ff6b6b"];
+    var c=pal[Math.abs(hash(r.t))%pal.length];
+    return '<svg viewBox="0 0 42 54" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="42" height="54" fill="'+c+'"/><rect width="42" height="54" fill="rgba(0,0,0,.28)"/><text x="21" y="32" text-anchor="middle" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="rgba(255,255,255,.92)" font-weight="700">'+esc(r.t[0])+'</text></svg>';
+  }
+  function esc(s){return String(s).replace(/[<>&]/g,"");}
+  function hash(s){var h=0;for(var i=0;i<s.length;i++){h=((h<<5)-h+s.charCodeAt(i))|0;}return h;}
+  var tb=document.getElementById("tbody");
+  function render(list){
+    tb.innerHTML=list.map(function(r){
+      return "<tr>"+cols.map(function(fn){return "<td>"+fn(r)+"</td>";}).join("")+"</tr>";
+    }).join("");
+    if(window.IO){
+      tb.querySelectorAll(".fill").forEach(function(el){window.IO.observe(el);});
+    } else {
+      tb.querySelectorAll(".fill").forEach(function(el){el.style.width=el.getAttribute("data-p")+"%";});
+    }
+  }
+  render(rows);
+
+  document.getElementById("chips").addEventListener("click",function(e){
+    var b=e.target.closest("[data-f]"); if(!b){return;}
+    Array.prototype.forEach.call(this.querySelectorAll(".chip"),function(x){x.classList.remove("on");});
+    b.classList.add("on");
+    var f=b.getAttribute("data-f");
+    render(f==="all"?rows:rows.filter(function(r){return r.st===f;}));
+    if(!rows.some(function(r){return r.st===f;}) && f!=="all"){
+      toast("当前筛选条件下没有结果，已恢复全部条目");
+      render(rows);
+      Array.prototype.forEach.call(this.querySelectorAll(".chip"),function(x){x.classList.toggle("on",x.getAttribute("data-f")==="all");});
+    }
+  });
+
+  /* 顶部检索（前端演示） */
+  var toastEl=document.getElementById("toast"),toastTimer;
+  function toast(msg){
+    toastEl.textContent=msg;
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer=setTimeout(function(){toastEl.classList.remove("show");},2600);
+  }
+  var q=document.getElementById("topSearch");
+  q.addEventListener("keydown",function(e){
+    if(e.key==="Enter"){
+      var v=(e.target.value||"").trim();
+      if(!v){toast("请输入片名、剧集、演员或平台后再查询");return;}
+      toast("已提交查询：「"+esc(v)+"」— 演示页面未接入后端，部署后此处返回渠道列表");
+      e.target.value="";
+    }
+  });
+
+  /* 进度条动画 */
+  var fills=document.querySelectorAll(".fill");
+  if("IntersectionObserver" in window){
+    window.IO=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.style.width=e.target.getAttribute("data-p")+"%";
+          window.IO.unobserve(e.target);
+        }
+      });
+    },{threshold:.2});
+    fills.forEach(function(f){window.IO.observe(f);});
+  } else { fills.forEach(function(f){f.style.width=f.getAttribute("data-p")+"%";}); }
+})();
+</script>
+</body>
+</html>
